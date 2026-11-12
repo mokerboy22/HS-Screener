@@ -1,0 +1,1009 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="HS Screener">
+<meta name="theme-color" content="#0A0A14">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<title>Halal Stock Screener</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin:0; }
+  body {
+    font-family: -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: var(--bg); color: var(--ink);
+    min-height: 100vh; position: relative; overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: env(safe-area-inset-bottom);
+    transition: background .4s ease, color .4s ease;
+  }
+  body::before {
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:0;
+    background:
+      radial-gradient(60% 42% at 12% 0%, var(--glow1), transparent 70%),
+      radial-gradient(52% 40% at 96% 55%, var(--glow2), transparent 70%);
+  }
+
+  header { position:relative; z-index:1; padding:18px 18px 6px; padding-top:calc(18px + env(safe-area-inset-top)); }
+  header h1 { margin:0; font-size:22px; font-weight:800; letter-spacing:-.02em; }
+  header p { margin:3px 0 0; font-size:12px; color:var(--muted); }
+
+  nav { position:relative; z-index:1; display:flex; gap:6px; padding:10px 12px; overflow-x:auto; scrollbar-width:none; }
+  nav::-webkit-scrollbar { display:none; }
+  nav button {
+    flex:none; border:1px solid var(--tileLine); background:var(--tile); color:var(--ink);
+    padding:9px 15px; border-radius:999px; font-size:14px; font-weight:600;
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  }
+  nav button.on { background:var(--btn); color:var(--btnInk); border-color:transparent; box-shadow:0 6px 18px -6px var(--btn); }
+
+  main { position:relative; z-index:1; padding:4px 14px 40px; }
+  .hidden { display:none !important; }
+
+  .card {
+    background:var(--tile); border:1px solid var(--tileLine); border-radius:24px;
+    padding:16px; margin-bottom:12px;
+    backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  }
+  .muted { color:var(--muted); font-size:13px; line-height:1.45; }
+  .title { font-size:17px; font-weight:700; letter-spacing:-.01em; margin:0 0 4px; }
+  .err { color:var(--fail); font-size:14px; }
+
+  input[type=text], input[type=password], input[type=number], select {
+    width:100%; padding:14px 15px; border-radius:16px; font-size:16px;
+    border:1px solid var(--tileLine); background:var(--tile); color:var(--ink);
+    -webkit-appearance:none; appearance:none;
+  }
+  input:focus, select:focus { outline:none; border-color:var(--accent1); box-shadow:0 0 0 3px color-mix(in srgb, var(--accent1) 25%, transparent); }
+  button { font-family:inherit; cursor:pointer; }
+  button.primary { background:var(--btn); color:var(--btnInk); border:0; padding:14px 20px; border-radius:16px; font-size:15px; font-weight:700; box-shadow:0 8px 20px -10px var(--btn); }
+  button.ghost { background:var(--tile); color:var(--ink); border:1px solid var(--tileLine); padding:10px 14px; border-radius:14px; font-size:14px; font-weight:600; }
+  button.link { background:none; border:0; padding:0; color:var(--accent1); font-size:14px; font-weight:700; }
+  input[type=checkbox] { accent-color: var(--accent1); width:16px; height:16px; }
+
+  .checks { display:flex; gap:8px; margin-top:14px; overflow-x:auto; scrollbar-width:none; }
+  .checks::-webkit-scrollbar { display:none; }
+  label.check {
+    display:flex; align-items:center; gap:7px; white-space:nowrap; flex:none;
+    padding:9px 14px; border-radius:999px; font-size:14px; font-weight:600;
+    border:1px solid var(--tileLine); background:var(--tile);
+  }
+  .chips { display:flex; gap:8px; flex-wrap:wrap; margin-top:12px; }
+  .suggest { display:flex; flex-direction:column; margin-top:8px; border:1px solid var(--tileLine); border-radius:16px; overflow:hidden; background:var(--tile); }
+  .suggest button { display:flex; gap:10px; align-items:baseline; width:100%; text-align:left; background:none; border:0; border-top:1px solid var(--tileLine); color:var(--ink); padding:12px 14px; font-size:15px; }
+  .suggest button:first-child { border-top:0; }
+  .suggest .sym { font-weight:800; min-width:56px; }
+  .suggest .nm { color:var(--muted); font-size:13px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .chip { border:1px solid var(--tileLine); background:var(--tile); color:var(--ink); border-radius:999px; padding:7px 13px; font-size:13px; font-weight:600; }
+
+  /* results */
+  .company { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; }
+  .company .name { font-size:21px; font-weight:800; letter-spacing:-.02em; line-height:1.2; }
+  .company .meta { font-size:12px; color:var(--muted); margin-top:6px; line-height:1.5; }
+
+  .swipe { display:flex; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; margin:0 -14px; padding:0 14px; }
+  .swipe::-webkit-scrollbar { display:none; }
+  .stdcard { flex:0 0 100%; scroll-snap-align:start; padding-right:4px; }
+  .stdcard .inner { padding-right:0; }
+  .dots { display:flex; justify-content:center; gap:6px; margin:6px 0 4px; }
+  .dot { width:6px; height:6px; border-radius:4px; background:var(--tileLine); transition:all .25s ease; }
+  .dot.on { width:18px; background:var(--accent1); }
+
+  .hero {
+    display:flex; align-items:center; gap:16px; padding:18px; border-radius:26px;
+    background:var(--tile); border:1px solid var(--tileLine); margin-bottom:10px;
+    backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  }
+  .hero svg { flex:none; }
+  .hero .std { font-size:12px; color:var(--muted); font-weight:600; letter-spacing:.02em; text-transform:uppercase; }
+  .hero .verdict { font-size:26px; font-weight:800; letter-spacing:-.02em; line-height:1.1; margin-top:4px; }
+  .hero .verdict.halal { color:var(--pass); }
+  .hero .verdict.not { color:var(--fail); }
+  .hero .verdict.unk { color:var(--unk); }
+  .hero .sub { font-size:13px; color:var(--muted); margin-top:6px; line-height:1.4; }
+
+  .bento { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .tile {
+    background:var(--tile); border:1px solid var(--tileLine); border-radius:22px; padding:14px;
+    display:flex; flex-direction:column; gap:6px; min-height:124px;
+    backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  }
+  .tile.wide { grid-column:1 / -1; min-height:0; }
+  .tile .lbl { font-size:12px; color:var(--muted); line-height:1.3; font-weight:600; }
+  .tile .big { font-size:24px; font-weight:800; letter-spacing:-.02em; line-height:1.1; }
+  .tile .lim { font-size:11px; color:var(--muted); line-height:1.35; }
+  .tile .foot { margin-top:auto; display:flex; flex-direction:column; gap:6px; }
+  .st { display:inline-flex; align-self:flex-start; align-items:center; gap:4px; font-size:11px; font-weight:800; padding:4px 9px; border-radius:999px; }
+  .st.pass { background:var(--passBg); color:var(--pass); }
+  .st.fail { background:var(--failBg); color:var(--fail); }
+  .st.unk { background:var(--unkBg); color:var(--unk); }
+  .tile.pass .big { color:var(--pass); }
+  .tile.fail .big { color:var(--fail); }
+  .tile.unk .big { color:var(--unk); }
+  .tile details summary { font-size:11px; color:var(--muted); cursor:pointer; list-style:none; }
+  .tile details summary::-webkit-details-marker { display:none; }
+  .tile details summary::before { content:"ⓘ "; }
+  .tile details .why { font-size:12px; color:var(--muted); line-height:1.45; margin-top:4px; }
+
+  .pill-row { display:flex; gap:6px; flex-wrap:wrap; margin-top:10px; }
+
+  /* watchlist */
+  .wlrow { display:flex; justify-content:space-between; align-items:center; gap:10px; }
+  .pillst { display:inline-block; font-size:12px; font-weight:800; padding:6px 12px; border-radius:999px; }
+  .pillst.halal { background:var(--passBg); color:var(--pass); }
+  .pillst.not { background:var(--failBg); color:var(--fail); }
+  .pillst.unk { background:var(--unkBg); color:var(--unk); }
+
+  /* standards tab */
+  .stdname { font-size:17px; font-weight:800; letter-spacing:-.01em; }
+  .stdcard-list { list-style:none; margin:10px 0 0; padding:0; }
+  .stdcard-list li { position:relative; padding:6px 0 6px 18px; font-size:14px; color:var(--ink); line-height:1.4; }
+  .stdcard-list li::before { content:""; position:absolute; left:0; top:13px; width:7px; height:7px; border-radius:50%; background:var(--accent1); }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .newrule { margin-bottom:10px; }
+  .newrule .muted { margin-bottom:5px; }
+
+  /* settings */
+  .seg { display:flex; gap:6px; background:var(--bg); border:1px solid var(--tileLine); border-radius:999px; padding:4px; }
+  .seg button { flex:1; border:0; background:transparent; color:var(--muted); padding:9px 6px; border-radius:999px; font-size:13px; font-weight:700; }
+  .seg button.on { background:var(--btn); color:var(--btnInk); }
+  .schemes { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:10px; }
+  .scheme { border:1px solid var(--tileLine); background:var(--tile); border-radius:18px; padding:10px; text-align:left; color:var(--ink); }
+  .scheme.on { border-color:var(--accent1); box-shadow:0 0 0 2px color-mix(in srgb, var(--accent1) 40%, transparent); }
+  .swatch { height:44px; border-radius:12px; margin-bottom:8px; }
+  .scheme .nm { font-size:13px; font-weight:800; }
+  .scheme .ds { font-size:11px; color:var(--muted); margin-top:2px; }
+  .sep { height:1px; background:var(--tileLine); margin:14px 0; }
+
+  .ptr { text-align:center; color:var(--muted); font-size:12px; height:0; overflow:visible; position:relative; z-index:1; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Halal Stock Screener</h1>
+  <p>US stocks · AAOIFI, DJIM and IFG screening</p>
+</header>
+<nav>
+  <button data-tab="check" class="on">Check</button>
+  <button data-tab="watch">Watchlist</button>
+  <button data-tab="standards">Standards</button>
+  <button data-tab="settings">Settings</button>
+</nav>
+<main>
+<div class="ptr" id="ptr"></div>
+
+<!-- CHECK -->
+<section id="tab-check">
+  <div class="card">
+    <div style="display:flex;gap:8px">
+      <input id="ticker" type="text" placeholder="Ticker or company name, e.g. MSFT or Nvidia" autocapitalize="characters" style="flex:1">
+      <button class="primary" id="lookupBtn">Check</button>
+    </div>
+    <div class="suggest hidden" id="suggest"></div>
+    <div class="chips" id="recent"></div>
+    <div class="checks" id="stdChecks"></div>
+  </div>
+  <div id="result"></div>
+  <div class="card" id="nonPermBox" style="display:none">
+    <div class="title">Non-permissible income</div>
+    <div style="display:flex;gap:8px;align-items:center;margin-top:8px">
+      <input id="nonPerm" type="number" step="0.1" min="0" placeholder="Auto" style="width:120px">
+      <button class="ghost" id="applyNonPerm">Apply</button>
+      <span class="muted" style="margin-left:auto">% of revenue</span>
+    </div>
+    <p class="muted" style="margin:10px 0 0"><strong>Note:</strong> This test currently only includes interest income. It does not include other potentially non-permissible income. Verify this yourself using the company's filings. If you know the percentage, enter it above to override the automatic figure.</p>
+  </div>
+</section>
+
+<!-- WATCHLIST -->
+<section id="tab-watch" class="hidden">
+  <div class="card">
+    <div style="display:flex;gap:8px">
+      <input id="watchInput" type="text" placeholder="Add ticker or name" autocapitalize="characters" style="flex:1">
+      <button class="primary" id="addWatch">Add</button>
+    </div>
+  </div>
+  <div style="display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap">
+    <select id="wlFilter" style="width:auto;flex:1">
+      <option value="all">All</option>
+      <option value="halal">Halal</option>
+      <option value="not">Not halal</option>
+      <option value="unk">Unverified</option>
+    </select>
+    <select id="wlSort" style="width:auto;flex:1">
+      <option value="name">Sort: name</option>
+      <option value="verdict">Sort: verdict</option>
+    </select>
+    <button class="ghost" id="refreshWatch">Refresh all</button>
+  </div>
+  <div class="muted" id="watchStatus" style="margin-bottom:8px"></div>
+  <div id="watchList"></div>
+</section>
+
+<!-- STANDARDS -->
+<section id="tab-standards" class="hidden">
+  <div id="stdList"></div>
+  <div class="card">
+    <div class="title">Add a custom standard</div>
+    <div class="muted" style="margin-bottom:10px">Give it a name, then set a minimum and/or maximum for any test. Leave both boxes empty to skip a test. Core business is always checked.</div>
+    <input id="newName" type="text" placeholder="Name, e.g. My standard" style="margin-bottom:12px">
+    <div id="newRules"></div>
+    <button class="primary" id="addStd" style="width:100%;margin-top:4px">Add standard</button>
+  </div>
+</section>
+
+<!-- SETTINGS -->
+<section id="tab-settings" class="hidden">
+  <div class="card">
+    <div class="title">Appearance</div>
+    <div class="muted" style="margin-bottom:10px">Mode</div>
+    <div class="seg" id="modeSeg">
+      <button data-mode="day">Day</button>
+      <button data-mode="night">Night</button>
+      <button data-mode="auto">Auto</button>
+    </div>
+    <div class="muted" style="margin:16px 0 0">Colour scheme</div>
+    <div class="schemes" id="schemes"></div>
+  </div>
+  <div class="card">
+    <div class="title">Financial Modeling Prep API key</div>
+    <input id="apiKey" type="password" placeholder="Paste your key" autocomplete="off" style="margin-top:8px">
+    <div style="display:flex;gap:8px;margin-top:10px">
+      <button class="primary" id="saveKey">Save key</button>
+      <button class="ghost" id="clearKey">Remove key</button>
+    </div>
+    <div class="muted" style="margin-top:8px">Stored only on this device.</div>
+  </div>
+  <div class="card">
+    <div class="title">Search suggestions</div>
+    <label style="display:flex;align-items:center;gap:10px;margin-top:10px;font-size:15px">
+      <input type="checkbox" id="liveSuggest"> Live suggestions while typing
+    </label>
+    <div class="muted" style="margin-top:8px">Each live lookup uses one or two of your daily FMP requests. When off, you still get free suggestions for well-known names and recent searches.</div>
+  </div>
+  <div class="card">
+    <div class="title">Saved data</div>
+    <button class="ghost" id="clearCache" style="margin-top:8px">Clear cached stock data</button>
+  </div>
+  <div class="card">
+    <div class="title">Notes</div>
+    <p class="muted" style="margin:6px 0 0">This is a screening tool, not a religious ruling. Check results with a qualified scholar for decisions you rely on.</p>
+  </div>
+</section>
+</main>
+
+<script>
+// ---------- storage ----------
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
+  set(k, v) { localStorage.setItem(k, JSON.stringify(v)); }
+};
+
+// ---------- colour schemes: each has a day and a night palette ----------
+const PALETTES = {
+  aurora: {
+    name: "Aurora", desc: "Violet and mint",
+    night: { bg:"#0A0A14", glow1:"rgba(124,92,255,.45)", glow2:"rgba(45,212,167,.28)", tile:"rgba(255,255,255,.08)", tileLine:"rgba(255,255,255,.16)", ink:"#FFFFFF", muted:"#A8A8C0", accent1:"#2DD4A7", accent2:"#7DF9FF", pass:"#7BF0C4", fail:"#FF6B8B", unk:"#FFB547", passBg:"rgba(45,212,167,.16)", failBg:"rgba(255,107,139,.16)", unkBg:"rgba(255,181,71,.16)", btn:"#7C5CFF", btnInk:"#FFFFFF" },
+    day:   { bg:"#F3F1FA", glow1:"rgba(124,92,255,.22)", glow2:"rgba(45,212,167,.2)", tile:"rgba(255,255,255,.72)", tileLine:"rgba(15,15,40,.08)", ink:"#14142B", muted:"#6A6A85", accent1:"#14B88A", accent2:"#3F8CFF", pass:"#0E9F6E", fail:"#E11D48", unk:"#B45309", passBg:"#DDF7EC", failBg:"#FDE4EA", unkBg:"#FDF0D5", btn:"#5B3DF5", btnInk:"#FFFFFF" }
+  },
+  frost: {
+    name: "Frost", desc: "Blue and glass",
+    night: { bg:"#0B1220", glow1:"rgba(59,130,246,.35)", glow2:"rgba(16,185,129,.2)", tile:"rgba(255,255,255,.07)", tileLine:"rgba(255,255,255,.14)", ink:"#EAF2FF", muted:"#93A4BF", accent1:"#3B82F6", accent2:"#10B981", pass:"#6EE7B7", fail:"#FCA5A5", unk:"#FCD34D", passBg:"rgba(16,185,129,.16)", failBg:"rgba(239,68,68,.16)", unkBg:"rgba(252,211,77,.14)", btn:"#3B82F6", btnInk:"#FFFFFF" },
+    day:   { bg:"#EEF2FA", glow1:"rgba(142,197,255,.6)", glow2:"rgba(255,179,217,.5)", tile:"rgba(255,255,255,.6)", tileLine:"rgba(255,255,255,.9)", ink:"#0F172A", muted:"#5B6B82", accent1:"#3B82F6", accent2:"#10B981", pass:"#047857", fail:"#B91C1C", unk:"#B45309", passBg:"#D1FAE5", failBg:"#FEE2E2", unkBg:"#FEF3C7", btn:"#1D4ED8", btnInk:"#FFFFFF" }
+  },
+  sunrise: {
+    name: "Sunrise", desc: "Coral and gold",
+    night: { bg:"#0A0814", glow1:"rgba(255,138,91,.5)", glow2:"rgba(255,212,107,.25)", tile:"rgba(255,255,255,.08)", tileLine:"rgba(255,255,255,.14)", ink:"#FFF8EE", muted:"#C9B8A8", accent1:"#FF8A5B", accent2:"#FFD46B", pass:"#8BE9B5", fail:"#FF7A7A", unk:"#FFD46B", passBg:"rgba(139,233,181,.14)", failBg:"rgba(255,122,122,.16)", unkBg:"rgba(255,212,107,.14)", btn:"#FF8A5B", btnInk:"#1B1030" },
+    day:   { bg:"#FFF6EC", glow1:"rgba(255,138,91,.35)", glow2:"rgba(255,212,107,.4)", tile:"rgba(255,255,255,.7)", tileLine:"rgba(120,60,20,.1)", ink:"#2A1A12", muted:"#8A6A58", accent1:"#F26B3A", accent2:"#E0A100", pass:"#15803D", fail:"#B42318", unk:"#B45309", passBg:"#DCFCE7", failBg:"#FEE4E2", unkBg:"#FEF0C7", btn:"#F26B3A", btnInk:"#FFFFFF" }
+  }
+};
+
+function applyPalette() {
+  const scheme = PALETTES[store.get("scheme", "aurora")] ? store.get("scheme", "aurora") : "aurora";
+  const mode = store.get("mode", "auto");
+  const night = mode === "night" || (mode === "auto" && matchMedia("(prefers-color-scheme: dark)").matches);
+  const p = PALETTES[scheme][night ? "night" : "day"];
+  const root = document.documentElement.style;
+  for (const k in p) root.setProperty("--" + k, p[k]);
+  document.querySelector('meta[name="theme-color"]').content = p.bg;
+  document.querySelectorAll("#modeSeg button").forEach(b => b.classList.toggle("on", b.dataset.mode === mode));
+  document.querySelectorAll("#schemes .scheme").forEach(b => b.classList.toggle("on", b.dataset.scheme === scheme));
+}
+matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", applyPalette);
+
+function renderSchemes() {
+  const current = store.get("scheme", "aurora");
+  document.getElementById("schemes").innerHTML = Object.entries(PALETTES).map(([k, s]) => {
+    const p = s.night;
+    return `<button class="scheme" data-scheme="${k}">
+      <div class="swatch" style="background:linear-gradient(135deg, ${p.btn}, ${p.accent1})"></div>
+      <div class="nm">${s.name}</div><div class="ds">${s.desc}</div></button>`;
+  }).join("");
+  document.querySelectorAll("#schemes .scheme").forEach(b => b.onclick = () => {
+    store.set("scheme", b.dataset.scheme); applyPalette();
+    const last = store.get("lastCompany", null);
+    if (last) showResult(last);
+  });
+  document.querySelectorAll("#modeSeg button").forEach(b => b.onclick = () => {
+    store.set("mode", b.dataset.mode); applyPalette();
+  });
+}
+
+// ---------- metrics ----------
+const pct = (a, b) => (a == null || b == null || b === 0) ? null : (a / b) * 100;
+const netLiquid = c => (c.currentAssets != null && c.currentLiabilities != null) ? (c.currentAssets - c.currentLiabilities) : null;
+
+const METRICS = {
+  debtToMcap: { label: "Debt compared to company value", why: "Interest-bearing debt as a share of the company's market value.", calc: c => pct(c.totalDebt, c.marketCap) },
+  cashToMcap: { label: "Cash and savings compared to company value", why: "Cash and interest-earning deposits as a share of market value.", calc: c => pct(c.cash, c.marketCap) },
+  debtToAssets: { label: "Debt compared to total assets", why: "Interest-bearing debt as a share of everything the company owns.", calc: c => pct(c.totalDebt, c.totalAssets) },
+  cashToAssets: { label: "Cash and savings compared to total assets", why: "Cash and deposits as a share of everything the company owns.", calc: c => pct(c.cash, c.totalAssets) },
+  illiquidToAssets: { label: "Long-term assets compared to total assets", why: "Assets that can't be turned into cash quickly (non-current assets), as a share of total assets.", calc: c => pct(c.nonCurrentAssets, c.totalAssets) },
+  netLiquidToMcap: { label: "Net short-term cash compared to company value", why: "Current assets minus current liabilities, as a share of market value.", calc: c => pct(netLiquid(c), c.marketCap) },
+  nonPermPct: { label: "Income from non-permissible sources", why: "Share of revenue that comes from interest income (the only source checked automatically).", calc: (c, x) => x.nonPermPct ?? pct(c.interestIncome, c.revenue) }
+};
+
+// ---------- standards ----------
+const BUILTIN = {
+  aaoifi: { name: "AAOIFI (Std 21)", short: "AAOIFI", bullets: ["Interest-bearing debt below 30% of market cap", "Interest-bearing deposits and securities below 30% of market cap", "Non-permissible income below 5% of revenue"], rules: { debtToMcap: { max: 30 }, cashToMcap: { max: 30 }, nonPermPct: { max: 5 } } },
+  djim: { name: "DJIM (Dow Jones Islamic Market)", short: "DJIM", bullets: ["Interest-bearing debt below 33% of market cap", "Cash and interest-bearing securities below 33% of market cap", "Non-permissible income below 5% of revenue"], rules: { debtToMcap: { max: 33 }, cashToMcap: { max: 33 }, nonPermPct: { max: 5 } } },
+  ifg: { name: "IFG", short: "IFG", bullets: ["Interest-bearing debt below 33% of total assets", "Long-term assets at least 20% of total assets", "Non-permissible income below 5% of gross revenue", "Net short-term cash must not exceed market cap"], rules: { debtToAssets: { max: 33 }, illiquidToAssets: { min: 20 }, nonPermPct: { max: 5 }, netLiquidToMcap: { max: 100 } } }
+};
+
+let enabled = store.get("enabledStd", { aaoifi: true });
+let custom = store.get("customStd", {});
+
+function allStandards() {
+  const out = {};
+  for (const k in BUILTIN) out[k] = { ...BUILTIN[k], builtin: true };
+  for (const k in custom) out[k] = { ...custom[k], short: custom[k].name, builtin: false };
+  return out;
+}
+function saveEnabled() { store.set("enabledStd", enabled); }
+function saveCustom() { store.set("customStd", custom); }
+function selectedKeys() { return Object.keys(allStandards()).filter(k => enabled[k]); }
+
+const SECTOR_EXCLUDE = ["Beverages—Brewers", "Beverages—Wineries & Distilleries", "Tobacco", "Gambling", "Resorts & Casinos", "Banks—", "Insurance—", "Aerospace & Defense"];
+const LIST_KEY = "watchlist", CACHE_KEY = "cache", RECENT_KEY = "recent", WLV_KEY = "wlVerdicts";
+
+// ---------- API ----------
+const BASE = "https://financialmodelingprep.com/stable";
+function apiKey() { return store.get("apiKey", ""); }
+
+async function fmp(path, params = {}) {
+  const key = apiKey();
+  if (!key) throw new Error("Add your FMP API key in Settings first.");
+  const qs = new URLSearchParams({ ...params, apikey: key });
+  const res = await fetch(`${BASE}/${path}?${qs}`);
+  if (res.status === 402) {
+    const sym = params.symbol || "this stock";
+    throw new Error(/[-.]/.test(sym)
+      ? `${sym} is a special share class that your FMP plan doesn't cover. Try the company's main ticker.`
+      : `Your free FMP plan doesn't include financial data for ${sym}. It covers a limited set of US stocks. A paid FMP plan would unlock the rest.`);
+  }
+  if (res.status === 429) throw new Error("You've used today's FMP requests. They reset tomorrow.");
+  if (!res.ok) throw new Error(`FMP error ${res.status} on ${path}`);
+  const data = await res.json();
+  if (data && data["Error Message"]) throw new Error(data["Error Message"]);
+  return data;
+}
+
+async function fetchCompany(symbol) {
+  const cache = store.get(CACHE_KEY, {});
+  const hit = cache[symbol];
+  if (hit && Date.now() - hit.at < 24 * 3600 * 1000) return hit.data;
+
+  const [profile, bs, is] = await Promise.all([
+    fmp("profile", { symbol }),
+    fmp("balance-sheet-statement", { symbol, period: "annual", limit: 1 }),
+    fmp("income-statement", { symbol, period: "annual", limit: 1 })
+  ]);
+  const p = Array.isArray(profile) ? profile[0] : profile;
+  if (!p) throw new Error(`No data for ${symbol}. Check the ticker (US stocks only).`);
+  const b = Array.isArray(bs) ? bs[0] : bs;
+  const i = Array.isArray(is) ? is[0] : is;
+
+  const data = {
+    symbol, name: p.companyName, sector: p.sector || "", industry: p.industry || "",
+    marketCap: p.marketCap ?? null,
+    totalAssets: b?.totalAssets ?? null, currentAssets: b?.totalCurrentAssets ?? null,
+    nonCurrentAssets: b?.totalNonCurrentAssets ?? null, currentLiabilities: b?.totalCurrentLiabilities ?? null,
+    totalDebt: b?.totalDebt ?? null,
+    cash: (b?.cashAndCashEquivalents ?? 0) + (b?.shortTermInvestments ?? 0),
+    revenue: i?.revenue ?? null, interestIncome: i?.interestIncome ?? null,
+    period: b?.date || "", fetchedAt: Date.now()
+  };
+  cache[symbol] = { at: Date.now(), data };
+  store.set(CACHE_KEY, cache);
+  return data;
+}
+
+// ---------- screening ----------
+function excludedIndustry(c) {
+  const ind = c.industry || "";
+  return SECTOR_EXCLUDE.find(s => ind.startsWith(s) || ind.includes(s.replace("—", ""))) || null;
+}
+
+function screen(c, key, extras) {
+  const s = allStandards()[key];
+  const tests = [];
+  const ind = c.industry || "unknown industry";
+  const coreOk = !excludedIndustry(c);
+
+  tests.push({
+    label: `Core business: ${ind}${coreOk ? "" : " (excluded)"}`,
+    status: coreOk ? "pass" : "fail", value: coreOk ? "Yes" : "No", detail: "",
+    why: "The company's main activity must be permissible. Checked from its industry label."
+  });
+
+  for (const mk in s.rules) {
+    const m = METRICS[mk];
+    const { min, max } = s.rules[mk];
+    const v = m.calc(c, extras);
+    const parts = [];
+    if (min != null) parts.push(`at least ${min}%`);
+    if (max != null) parts.push(`at most ${max}%`);
+    const need = `Needs ${parts.join(" and ")}`;
+    if (v == null || Number.isNaN(v)) { tests.push({ label: m.label, status: "unknown", value: "unknown", detail: need, why: m.why }); continue; }
+    const ok = (min == null || v >= min) && (max == null || v <= max);
+    tests.push({ label: m.label, status: ok ? "pass" : "fail", value: v.toFixed(1) + "%", detail: need, why: m.why });
+  }
+
+  const fails = tests.filter(x => x.status === "fail");
+  const unknowns = tests.filter(x => x.status === "unknown");
+  const verdict = fails.length ? "not" : unknowns.length ? "unk" : "halal";
+  return { key, name: s.short || s.name, verdict, tests, fails };
+}
+
+function screenSelected(c, extras) { return selectedKeys().map(k => screen(c, k, extras)); }
+
+function summaryText(results) {
+  const n = results.length;
+  const halal = results.filter(r => r.verdict === "halal").length;
+  const not = results.filter(r => r.verdict === "not").length;
+  if (not) return { cls: "not", text: `Not halal under ${not} of ${n} standard${n > 1 ? "s" : ""}` };
+  if (halal === n) return { cls: "halal", text: `Halal under ${n === 1 ? "this standard" : "all " + n + " standards"}` };
+  return { cls: "unk", text: `Unverified: ${halal} of ${n} standards pass, the rest need data` };
+}
+
+function overallVerdict(results) {
+  if (results.some(r => r.verdict === "not")) return "not";
+  if (results.some(r => r.verdict === "unk")) return "unk";
+  return "halal";
+}
+
+const VERDICT_WORD = { halal: "Halal", not: "Not halal", unk: "Unverified" };
+
+// ---------- rendering ----------
+function freshness(c) {
+  if (!c.fetchedAt) return "";
+  const hrs = Math.round((Date.now() - c.fetchedAt) / 3600000);
+  const when = hrs < 1 ? "just now" : hrs < 24 ? `${hrs} h ago` : `${Math.round(hrs / 24)} day(s) ago`;
+  return `Financials: ${c.period || "n/a"} · Fetched ${when}`;
+}
+
+function ringSVG(passed, total, idx) {
+  const r = 40, circ = 2 * Math.PI * r;
+  const frac = total ? passed / total : 0;
+  return `<svg width="104" height="104" viewBox="0 0 104 104">
+    <defs><linearGradient id="rg${idx}" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="var(--accent1)"/><stop offset="1" stop-color="var(--accent2)"/></linearGradient></defs>
+    <circle cx="52" cy="52" r="${r}" fill="none" stroke="var(--tileLine)" stroke-width="9"/>
+    <circle cx="52" cy="52" r="${r}" fill="none" stroke="url(#rg${idx})" stroke-width="9" stroke-linecap="round"
+      stroke-dasharray="${(frac * circ).toFixed(1)} ${circ.toFixed(1)}" transform="rotate(-90 52 52)"/>
+    <text x="52" y="50" text-anchor="middle" font-size="22" font-weight="800" fill="var(--ink)">${passed}/${total}</text>
+    <text x="52" y="66" text-anchor="middle" font-size="10" fill="var(--muted)">pass</text>
+  </svg>`;
+}
+
+function standardView(r, idx) {
+  const passed = r.tests.filter(t => t.status === "pass").length;
+  const total = r.tests.length;
+  const fails = r.tests.filter(t => t.status === "fail").map(t => t.label.replace(/^Core business: .*/, "Core business").toLowerCase());
+  const unks = r.tests.filter(t => t.status === "unknown").map(t => t.label.toLowerCase());
+  let sub = "All tests pass.";
+  if (fails.length) sub = `Fails: ${fails.join(", ")}.`;
+  else if (unks.length) sub = `Could not be checked: ${unks.join(", ")}.`;
+
+  const hero = `<div class="hero">
+    ${ringSVG(passed, total, idx)}
+    <div>
+      <div class="std">${r.name}</div>
+      <div class="verdict ${r.verdict === "halal" ? "halal" : r.verdict === "not" ? "not" : "unk"}">${VERDICT_WORD[r.verdict]}</div>
+      <div class="sub">${sub}</div>
+    </div>
+  </div>`;
+
+  const tiles = r.tests.map(t => {
+    const isCore = t.label.startsWith("Core business");
+    const cls = t.status === "pass" ? "pass" : t.status === "fail" ? "fail" : "unk";
+    const word = t.status === "pass" ? "Pass" : t.status === "fail" ? "Fail" : "Unknown";
+    const symbol = t.status === "pass" ? "✓" : t.status === "fail" ? "✗" : "?";
+    const label = isCore ? "Core business" : t.label;
+    const big = isCore ? t.value : t.value;
+    const lim = isCore ? t.label.replace(/^Core business: ?/, "") : t.detail;
+    return `<div class="tile ${cls}${isCore ? " wide" : ""}">
+      <div class="lbl">${label}</div>
+      <div class="big">${big}</div>
+      ${lim ? `<div class="lim">${lim}</div>` : ""}
+      <div class="foot">
+        <span class="st ${cls}">${symbol} ${word}</span>
+        <details><summary>What this means</summary><div class="why">${t.why || ""}</div></details>
+      </div>
+    </div>`;
+  }).join("");
+
+  return `<div class="stdcard"><div class="inner">${hero}<div class="bento">${tiles}</div></div></div>`;
+}
+
+function renderResults(c, results) {
+  const head = `<div class="card">
+    <div class="company">
+      <div>
+        <div class="name">${c.name}</div>
+        <div class="meta"><strong>${c.symbol}</strong> · ${c.industry || "unknown industry"}${c.sector ? ` · ${c.sector}` : ""}<br>
+        Market cap ${c.marketCap ? "$" + (c.marketCap / 1e9).toFixed(1) + "B" : "unknown"} · ${freshness(c)}</div>
+      </div>
+      <button class="link" id="shareBtn">Share</button>
+    </div>
+    <button class="ghost" id="watchBtn" style="width:100%;margin-top:14px"></button>
+  </div>`;
+  if (!results.length) return head + `<div class="card muted">No standards selected. Tick one or more above.</div>`;
+
+  const dots = results.length > 1 ? `<div class="dots">${results.map((_, i) => `<span class="dot${i === 0 ? " on" : ""}"></span>`).join("")}</div>` : "";
+  return head + `<div class="swipe" id="swipe">${results.map((r, i) => standardView(r, i)).join("")}</div>` + dots;
+}
+
+function wireResults(c, results) {
+  const sw = document.getElementById("swipe");
+  if (sw) {
+    const dots = document.querySelectorAll(".dot");
+    sw.addEventListener("scroll", () => {
+      const i = Math.round(sw.scrollLeft / sw.clientWidth);
+      dots.forEach((d, j) => d.classList.toggle("on", j === i));
+    }, { passive: true });
+  }
+  const share = document.getElementById("shareBtn");
+  if (share) share.onclick = () => shareResult(c, results);
+
+  // add to / remove from watchlist
+  const wb = document.getElementById("watchBtn");
+  if (wb) {
+    const paint = () => {
+      const saved = store.get(LIST_KEY, []).includes(c.symbol);
+      wb.textContent = saved ? "✓ In watchlist · tap to remove" : "+ Add to watchlist";
+      wb.style.borderColor = saved ? "var(--accent1)" : "";
+      wb.style.color = saved ? "var(--accent1)" : "";
+    };
+    wb.onclick = () => {
+      let list = store.get(LIST_KEY, []);
+      if (list.includes(c.symbol)) {
+        list = list.filter(s => s !== c.symbol);
+      } else {
+        list.push(c.symbol);
+        if (results.length) {
+          const verdicts = store.get(WLV_KEY, {});
+          verdicts[c.symbol] = { v: overallVerdict(results), text: summaryText(results).text };
+          store.set(WLV_KEY, verdicts);
+        }
+      }
+      store.set(LIST_KEY, list);
+      paint();
+    };
+    paint();
+  }
+}
+
+function shareResult(c, results) {
+  const names = results.map(r => r.name).join(", ");
+  const lines = [];
+  const not = results.filter(r => r.verdict === "not");
+  const unk = results.filter(r => r.verdict === "unk");
+  const headline = not.length ? "Not halal" : unk.length ? "Unverified" : "Halal";
+  lines.push(`${c.name} (${c.symbol}), ${names}: ${headline}.`);
+
+  const WORDS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+  const isIncome = t => t.label.startsWith("Income from non-permissible");
+  for (const r of results) {
+    const core = r.tests.find(t => t.label.startsWith("Core business"));
+    const balance = r.tests.filter(t => t !== core && !isIncome(t));
+    const balancePass = balance.filter(t => t.status === "pass").length;
+    const parts = [];
+    if (core && core.status === "pass") {
+      if (balance.length && balancePass === balance.length) {
+        parts.push(`Core business and the ${WORDS[balance.length] || balance.length} balance-sheet tests pass.`);
+      } else {
+        parts.push(`Core business passes${balancePass ? ` and ${balancePass} other test${balancePass > 1 ? "s" : ""} pass` : ""}.`);
+      }
+    }
+    const fails = r.tests.filter(t => t.status === "fail");
+    if (fails.length) parts.push(`Fails: ${fails.map(t => t.label.toLowerCase()).join("; ")}.`);
+    r.tests.filter(t => t.status === "unknown").forEach(t => {
+      parts.push(`${isIncome(t) ? "Non-permissible income" : t.label} could not be checked.`);
+    });
+    lines.push((results.length > 1 ? `${r.name}: ` : "") + parts.join(" "));
+  }
+
+  if (c.period) lines.push(`Financials to ${c.period}.`);
+  lines.push("Screening tool, not a religious ruling. Check with a scholar before relying on it.");
+
+  const link = `${location.origin}${location.pathname}?t=${encodeURIComponent(c.symbol)}`;
+  const text = lines.join("\n") + `\n${link}`;
+  if (navigator.share) navigator.share({ text }).catch(() => {});
+  else navigator.clipboard?.writeText(text).then(() => alert("Result and link copied."));
+}
+
+function showResult(c) {
+  const results = screenSelected(c, currentExtras());
+  document.getElementById("result").innerHTML = renderResults(c, results);
+  wireResults(c, results);
+}
+
+function currentExtras() {
+  const v = document.getElementById("nonPerm").value;
+  return { nonPermPct: v === "" ? null : Number(v) };
+}
+
+function renderChecks() {
+  document.getElementById("stdChecks").innerHTML = Object.entries(allStandards()).map(([k, s]) => `
+    <label class="check"><input type="checkbox" data-check="${k}" ${enabled[k] ? "checked" : ""}> ${s.short || s.name}</label>`).join("");
+  document.querySelectorAll("[data-check]").forEach(cb => cb.onchange = () => {
+    enabled[cb.dataset.check] = cb.checked;
+    saveEnabled();
+    const last = store.get("lastCompany", null);
+    if (last) showResult(last);
+  });
+}
+
+function renderRecent() {
+  const r = store.get(RECENT_KEY, []);
+  document.getElementById("recent").innerHTML = r.map(s => `<button class="chip" data-recent="${s}">${s}</button>`).join("");
+  document.querySelectorAll("[data-recent]").forEach(b => b.onclick = () => {
+    document.getElementById("ticker").value = b.dataset.recent;
+    checkSymbol(b.dataset.recent);
+  });
+}
+
+function addRecent(sym) {
+  const r = store.get(RECENT_KEY, []).filter(s => s !== sym);
+  r.unshift(sym);
+  store.set(RECENT_KEY, r.slice(0, 6));
+  renderRecent();
+}
+
+// Second share classes of the same company: use the class the data plan covers
+const SAME_COMPANY = { GOOG: "GOOGL", "BRK-A": "BRK-B", "BRK.A": "BRK-B", "BRK.B": "BRK-B", FOX: "FOXA", NWS: "NWSA" };
+
+async function checkSymbol(sym) {
+  if (SAME_COMPANY[sym]) {
+    sym = SAME_COMPANY[sym];
+    document.getElementById("ticker").value = sym;
+  }
+  const out = document.getElementById("result");
+  out.innerHTML = `<div class="card muted">Loading ${sym}…</div>`;
+  try {
+    const c = await fetchCompany(sym);
+    store.set("lastCompany", c);
+    addRecent(c.symbol);
+    showResult(c);
+    document.getElementById("nonPermBox").style.display = "block";
+  } catch (e) {
+    out.innerHTML = `<div class="card err">${e.message}</div>`;
+  }
+}
+
+document.getElementById("applyNonPerm").onclick = () => {
+  const c = store.get("lastCompany", null);
+  if (c) showResult(c);
+};
+
+// ---------- name search ----------
+const ALIASES = {
+  "bank of america": "BAC", bofa: "BAC", "bank of america corp": "BAC",
+  google: "GOOGL", alphabet: "GOOGL", facebook: "META", meta: "META", instagram: "META",
+  apple: "AAPL", microsoft: "MSFT", amazon: "AMZN", nvidia: "NVDA", tesla: "TSLA",
+  netflix: "NFLX", walmart: "WMT", coca: "KO", coke: "KO", pepsi: "PEP", mcdonalds: "MCD",
+  mcdonald: "MCD", disney: "DIS", intel: "INTC", amd: "AMD", oracle: "ORCL", ibm: "IBM",
+  visa: "V", mastercard: "MA", paypal: "PYPL", uber: "UBER", airbnb: "ABNB", boeing: "BA",
+  nike: "NKE", starbucks: "SBUX", target: "TGT", costco: "COST", exxon: "XOM", chevron: "CVX"
+};
+const US_EXCHANGES = ["NASDAQ", "NYSE", "AMEX"];
+
+async function searchByName(query) {
+  const out = document.getElementById("result");
+  out.innerHTML = `<div class="card muted">Searching for "${query}"…</div>`;
+  try {
+    const q = query.trim().toLowerCase().replace(/[^a-z0-9 ]/g, "");
+    const alias = ALIASES[q] || ALIASES[q.split(" ")[0]];
+    if (alias) { checkSymbol(alias); return; }
+
+    let list = await fmp("search-name", { query: q });
+    let us = (Array.isArray(list) ? list : []).filter(r => US_EXCHANGES.includes(r.exchange));
+    if (!us.length && q.includes(" ")) {
+      list = await fmp("search-name", { query: q.split(" ")[0] });
+      us = (Array.isArray(list) ? list : []).filter(r => US_EXCHANGES.includes(r.exchange));
+    }
+    const common = us.filter(r => !/[-.]/.test(r.symbol));
+    us = (common.length ? common : us).slice(0, 6);
+    if (!us.length) { out.innerHTML = `<div class="card err">No US stock found for "${query}". Try the ticker symbol.</div>`; return; }
+    out.innerHTML = `<div class="card"><div class="muted" style="margin-bottom:8px">Pick the company</div>` +
+      us.map(r => `<button class="ghost" data-pick="${r.symbol}" style="display:block;width:100%;text-align:left;margin-top:6px">
+        <strong>${r.symbol}</strong> · ${r.name}</button>`).join("") + `</div>`;
+    out.querySelectorAll("[data-pick]").forEach(b => b.onclick = () => {
+      document.getElementById("ticker").value = b.dataset.pick;
+      checkSymbol(b.dataset.pick);
+    });
+  } catch (e) {
+    out.innerHTML = `<div class="card err">${e.message}</div>`;
+  }
+}
+
+// ---------- suggestions while typing ----------
+const suggestCache = new Map();
+let suggestTimer = null, suggestSeq = 0;
+const tickerInput = document.getElementById("ticker");
+const suggestBox = document.getElementById("suggest");
+
+function hideSuggest() { suggestBox.classList.add("hidden"); suggestBox.innerHTML = ""; }
+
+function showSuggest(items) {
+  if (!items.length) { hideSuggest(); return; }
+  suggestBox.innerHTML = items.map(r => `<button data-sug="${r.symbol}"><span class="sym">${r.symbol}</span><span class="nm">${r.name || ""}</span></button>`).join("");
+  suggestBox.classList.remove("hidden");
+  suggestBox.querySelectorAll("[data-sug]").forEach(b => b.onclick = () => {
+    tickerInput.value = b.dataset.sug;
+    hideSuggest();
+    tickerInput.blur();
+    checkSymbol(b.dataset.sug);
+  });
+}
+
+// Matches that cost no API call: common names and recent searches
+function localSuggest(q) {
+  const out = [];
+  for (const [alias, sym] of Object.entries(ALIASES)) {
+    if (alias.startsWith(q) && !out.some(r => r.symbol === sym)) out.push({ symbol: sym, name: alias.replace(/\b\w/g, ch => ch.toUpperCase()) });
+  }
+  for (const sym of store.get(RECENT_KEY, [])) {
+    if (sym.toLowerCase().startsWith(q) && !out.some(r => r.symbol === sym)) out.push({ symbol: sym, name: "Recent" });
+  }
+  return out;
+}
+
+async function remoteSuggest(q) {
+  if (suggestCache.has(q)) return suggestCache.get(q);
+  if (!apiKey() || !store.get("liveSuggest", true)) return [];
+  const calls = [];
+  if (q.length <= 4) calls.push(fmp("search-symbol", { query: q }));
+  if (q.length >= 3) calls.push(fmp("search-name", { query: q }));
+  const settled = await Promise.allSettled(calls);
+  let rows = settled.filter(s => s.status === "fulfilled" && Array.isArray(s.value)).flatMap(s => s.value);
+  rows = rows.filter(r => US_EXCHANGES.includes(r.exchange) && !/[-.]/.test(r.symbol));
+  const seen = new Set();
+  rows = rows.filter(r => !seen.has(r.symbol) && seen.add(r.symbol));
+  // exact and prefix ticker matches first
+  const up = q.toUpperCase();
+  rows.sort((a, b) => (b.symbol === up) - (a.symbol === up) || b.symbol.startsWith(up) - a.symbol.startsWith(up));
+  suggestCache.set(q, rows);
+  return rows;
+}
+
+tickerInput.addEventListener("input", () => {
+  clearTimeout(suggestTimer);
+  const q = tickerInput.value.trim().toLowerCase().replace(/[^a-z0-9 .]/g, "");
+  if (q.length < 2) { hideSuggest(); return; }
+  const local = localSuggest(q);
+  showSuggest(local.slice(0, 6));
+  const seq = ++suggestSeq;
+  suggestTimer = setTimeout(async () => {
+    const remote = await remoteSuggest(q);
+    if (seq !== suggestSeq) return; // a newer keystroke has taken over
+    const merged = [...local];
+    for (const r of remote) if (!merged.some(m => m.symbol === r.symbol)) merged.push(r);
+    showSuggest(merged.slice(0, 6));
+  }, 400);
+});
+
+tickerInput.addEventListener("keydown", e => {
+  if (e.key === "Enter") document.getElementById("lookupBtn").click();
+});
+
+document.getElementById("lookupBtn").onclick = () => {
+  clearTimeout(suggestTimer); suggestSeq++; hideSuggest();
+  const raw = document.getElementById("ticker").value.trim();
+  if (!raw) return;
+  const looksLikeTicker = /^[A-Za-z.\-]{1,5}$/.test(raw) && raw === raw.toUpperCase();
+  if (looksLikeTicker) checkSymbol(raw.toUpperCase());
+  else searchByName(raw);
+};
+
+// ---------- watchlist ----------
+const VCLASS = { halal: "halal", not: "not", unk: "unk" };
+const VTEXT = { halal: "Halal", not: "Not halal", unk: "Unverified" };
+
+function renderWatch() {
+  const list = store.get(LIST_KEY, []);
+  const verdicts = store.get(WLV_KEY, {});
+  const filter = document.getElementById("wlFilter").value;
+  const sort = document.getElementById("wlSort").value;
+  const order = { not: 0, unk: 1, halal: 2, none: 3 };
+
+  let items = list.map(sym => ({ sym, v: verdicts[sym]?.v || "none" }));
+  if (filter !== "all") items = items.filter(i => i.v === filter);
+  if (sort === "verdict") items.sort((a, b) => order[a.v] - order[b.v] || a.sym.localeCompare(b.sym));
+  else items.sort((a, b) => a.sym.localeCompare(b.sym));
+
+  const el = document.getElementById("watchList");
+  if (!list.length) { el.innerHTML = `<div class="card muted">No stocks saved yet.</div>`; return; }
+  if (!items.length) { el.innerHTML = `<div class="card muted">No stocks match this filter.</div>`; return; }
+  el.innerHTML = items.map(({ sym, v }) => {
+    const info = verdicts[sym];
+    const pill = info ? `<span class="pillst ${VCLASS[v]}">${VTEXT[v]}</span>` : `<span class="muted">Not refreshed</span>`;
+    const detail = info ? `<div class="muted" style="margin-top:8px">${info.text}</div>` : "";
+    return `<div class="card" style="cursor:pointer" data-open="${sym}">
+      <div class="wlrow">
+        <div class="title" style="margin:0">${sym}</div>
+        <div style="display:flex;gap:8px;align-items:center">${pill}<button class="ghost" data-remove="${sym}">Remove</button></div>
+      </div>${detail}
+    </div>`;
+  }).join("");
+
+  el.querySelectorAll("[data-remove]").forEach(b => b.onclick = (e) => {
+    e.stopPropagation();
+    store.set(LIST_KEY, store.get(LIST_KEY, []).filter(s => s !== b.dataset.remove));
+    renderWatch();
+  });
+  el.querySelectorAll("[data-open]").forEach(card => card.onclick = () => {
+    const sym = card.dataset.open;
+    document.querySelector('nav button[data-tab="check"]').click();
+    document.getElementById("ticker").value = sym;
+    checkSymbol(sym);
+  });
+}
+
+async function refreshWatch() {
+  const list = store.get(LIST_KEY, []);
+  const status = document.getElementById("watchStatus");
+  const verdicts = store.get(WLV_KEY, {});
+  for (const sym of list) {
+    status.textContent = `Refreshing ${sym}…`;
+    try {
+      const c = await fetchCompany(sym);
+      const results = screenSelected(c, { nonPermPct: null });
+      verdicts[sym] = { v: overallVerdict(results), text: `${summaryText(results).text}` };
+    } catch (e) {
+      verdicts[sym] = { v: "unk", text: e.message };
+    }
+    store.set(WLV_KEY, verdicts);
+    renderWatch();
+  }
+  status.textContent = list.length ? `Updated ${new Date().toLocaleTimeString()}` : "";
+}
+
+document.getElementById("addWatch").onclick = () => {
+  const sym = document.getElementById("watchInput").value.trim().toUpperCase();
+  if (!sym) return;
+  const list = store.get(LIST_KEY, []);
+  if (!list.includes(sym)) list.push(sym);
+  store.set(LIST_KEY, list);
+  document.getElementById("watchInput").value = "";
+  renderWatch();
+};
+document.getElementById("refreshWatch").onclick = refreshWatch;
+document.getElementById("wlFilter").onchange = renderWatch;
+document.getElementById("wlSort").onchange = renderWatch;
+
+// pull down on the watchlist to refresh
+let touchY = null;
+document.addEventListener("touchstart", e => { touchY = window.scrollY === 0 ? e.touches[0].clientY : null; }, { passive: true });
+document.addEventListener("touchend", e => {
+  const onWatch = !document.getElementById("tab-watch").classList.contains("hidden");
+  if (touchY != null && onWatch && e.changedTouches[0].clientY - touchY > 80) refreshWatch();
+  touchY = null;
+});
+
+// ---------- standards tab ----------
+function renderStandards() {
+  const el = document.getElementById("stdList");
+  el.innerHTML = Object.entries(allStandards()).map(([k, s]) => `
+    <div class="card">
+      <div class="wlrow">
+        <div class="stdname">${s.name}</div>
+        ${s.builtin ? "" : `<button class="ghost" data-del="${k}">Delete</button>`}
+      </div>
+      <ul class="stdcard-list">
+        <li>Core business must be permissible (checked automatically from the industry)</li>
+        ${(s.bullets || []).map(b => `<li>${b}</li>`).join("")}
+      </ul>
+    </div>`).join("");
+  el.querySelectorAll("[data-del]").forEach(b => b.onclick = () => {
+    delete custom[b.dataset.del];
+    delete enabled[b.dataset.del];
+    saveCustom(); saveEnabled();
+    renderChecks(); renderStandards();
+  });
+}
+
+function renderNewRules() {
+  document.getElementById("newRules").innerHTML = Object.entries(METRICS).map(([k, m]) => `
+    <div class="newrule">
+      <div class="muted">${m.label} (%)</div>
+      <div class="grid2">
+        <input type="number" step="0.1" placeholder="min" id="new_min_${k}">
+        <input type="number" step="0.1" placeholder="max" id="new_max_${k}">
+      </div>
+    </div>`).join("");
+}
+
+document.getElementById("addStd").onclick = () => {
+  const name = document.getElementById("newName").value.trim();
+  if (!name) { alert("Give the standard a name."); return; }
+  const rules = {};
+  for (const k of Object.keys(METRICS)) {
+    const mn = document.getElementById(`new_min_${k}`).value;
+    const mx = document.getElementById(`new_max_${k}`).value;
+    if (mn === "" && mx === "") continue;
+    rules[k] = {};
+    if (mn !== "") rules[k].min = Number(mn);
+    if (mx !== "") rules[k].max = Number(mx);
+  }
+  if (!Object.keys(rules).length) { alert("Set at least one min or max."); return; }
+  const parts = Object.entries(rules).map(([k, r]) =>
+    `${METRICS[k].label} ${r.min != null ? "at least " + r.min + "%" : ""}${r.min != null && r.max != null ? " and " : ""}${r.max != null ? "at most " + r.max + "%" : ""}`);
+  const key = "custom_" + Date.now();
+  custom[key] = { name, bullets: parts, rules };
+  enabled[key] = true;
+  saveCustom(); saveEnabled();
+  document.getElementById("newName").value = "";
+  renderNewRules();
+  renderChecks(); renderStandards();
+};
+
+// ---------- settings ----------
+document.getElementById("apiKey").value = apiKey();
+document.getElementById("saveKey").onclick = () => {
+  store.set("apiKey", document.getElementById("apiKey").value.trim());
+  alert("Key saved on this device.");
+};
+document.getElementById("clearKey").onclick = () => {
+  localStorage.removeItem("apiKey");
+  document.getElementById("apiKey").value = "";
+};
+document.getElementById("liveSuggest").checked = store.get("liveSuggest", true);
+document.getElementById("liveSuggest").onchange = e => store.set("liveSuggest", e.target.checked);
+document.getElementById("clearCache").onclick = () => {
+  localStorage.removeItem(CACHE_KEY);
+  alert("Cached data cleared.");
+};
+
+// ---------- tabs ----------
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("nav button").forEach(x => x.classList.toggle("on", x === b));
+  document.querySelectorAll("main > section").forEach(s => s.classList.add("hidden"));
+  document.getElementById(`tab-${b.dataset.tab}`).classList.remove("hidden");
+  if (b.dataset.tab === "watch") renderWatch();
+  if (b.dataset.tab === "standards") { renderStandards(); renderNewRules(); }
+});
+
+// ---------- shared links: ?t=TICKER opens that stock ----------
+const sharedTicker = new URLSearchParams(location.search).get("t");
+
+// ---------- start ----------
+renderSchemes();
+applyPalette();
+renderChecks();
+renderRecent();
+renderNewRules();
+if (sharedTicker) {
+  document.getElementById("ticker").value = sharedTicker.toUpperCase();
+  document.querySelector('nav button[data-tab="check"]').click();
+  checkSymbol(sharedTicker.toUpperCase());
+}
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+</script>
+</body>
+</html>
