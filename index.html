@@ -795,7 +795,7 @@ async function remoteSuggest(q) {
 tickerInput.addEventListener("input", () => {
   clearTimeout(suggestTimer);
   const q = tickerInput.value.trim().toLowerCase().replace(/[^a-z0-9 .]/g, "");
-  if (q.length < 2) { hideSuggest(); return; }
+  if (q.length < 2 || !store.get("liveSuggest", true)) { hideSuggest(); return; }
   const local = localSuggest(q);
   showSuggest(local.slice(0, 6));
   const seq = ++suggestSeq;
